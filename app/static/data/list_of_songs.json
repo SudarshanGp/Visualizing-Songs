@@ -1,0 +1,99 @@
+[
+    {
+        "name"          : "Hello",
+        "artist"        : "Adele"
+    },
+    {
+        "name"          : "Jumpman",
+        "artist"        : "Drake"
+    },
+    {
+        "name"          : "Sonata No.14 Moonlight in C Sharp Minor Op.27 No.2",
+        "artist"        : "Paul Lewis"
+    },
+    {
+        "name"          : "I want to hold your hand",
+        "artist"        : "The Beatles"
+    },
+    {
+        "name"          : "Fly Me to The Moon",
+        "artist"        : "Frank Sinatra"
+    },
+    {
+        "name"          : "Sorry",
+        "artist"        : "Justin Bieber"
+    },
+    {
+        "name"          : "One Time",
+        "artist"        : "Justin Bieber"
+    },
+    {
+        "name"          : "Your Song",
+        "artist"        : "Elton John"
+    },
+    {
+        "name"          : "Smells Like Teen Spirit",
+        "artist"        : "Nirvana"
+    },
+    {
+        "name"          : "Hotel California",
+        "artist"        : "The Eagles"
+    },
+    {
+        "name"          : "Blowin' In the Wind",
+        "artist"        : "Bob Dylan"
+    },
+    {
+        "name"          : "Stairway To Heaven",
+        "artist"        : "Led Zepplin"
+    },
+    {
+        "name"          : "Wonderwall",
+        "artist"        : "Oasis"
+    },
+    {
+        "name"          : "Redemption Song",
+        "artist"        : "Bob Marley"
+    },
+    {
+        "name"          : "I Gotta felling",
+        "artist"        : "The Black Eyed Peas"
+    },
+    {
+        "name"          : "No Diggity",
+        "artist"        : "Blackstreet, Dr.Dre, Queen Pen"
+    },
+    {
+        "name"          : "Till I Collapse",
+        "artist"        : "Eminem, Nate Dogg"
+    },
+    {
+        "name"          : "Never Gonna Give You Up",
+        "artist"        : "Rick Astley"
+    },
+    {
+        "name"          : "Billie Jean",
+        "artist"        : "Michael Jackson"
+    },
+    {
+        "name"          : "Call Me Maybe",
+        "artist"        : "Carly Rae Jepsen"
+    },
+    {
+        "name"          : "I Love Rock 'N Roll",
+        "artist"        : "Joan Jett & BlackHearts"
+    },
+    {
+        "name"          : "Play That Funky Music",
+        "artist"        : "Wild Cherry"
+    },
+    {
+        "name"          : "Animals",
+        "artist"        : "Martin Garrix"
+    },
+    {
+        "name"          : "Roses",
+        "artist"        : "The Chainsmokers"
+    }
+    
+]

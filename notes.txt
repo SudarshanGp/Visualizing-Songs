@@ -1,0 +1,143 @@
+Animals
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, lots of variance
+
+Billie Jean
+- High loudness, little variance
+- Low pitch, little variance
+- Medium pitch, lots of variance
+- Medium energy, little variance
+
+Blowin' in the Wind
+- High loudness, lots of variance
+- Low pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+Call Me Maybe
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, lots of variance
+
+Fly Me to the Moon
+- High loudness, lots of variance
+- Very varied pitch
+- Very varied timbre
+- Medium energy, little variance
+
+Hello
+- High loudness, lots of variance
+- Very varied pitch
+- Very varied timbre
+- Medium energy, lots of variance
+
+Hotel California
+- High loudness, little variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+I Gotta Feeling
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+I Love Rock 'n Roll
+- Very varied loudness
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, lots of variance
+
+I Want to Hold Your Hand
+- High loudness, little variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+Jumpman
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, lots of variance
+
+Never Gonna Give You Up
+- High loudness, little variance
+- Medium pitch, lots of variance
+- Low timbre, lots of variance
+- High energy, little variance
+
+No Diggity
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+One Time
+- High loudness, little variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+Play that Funky Music
+- High loudness, lots of variance
+- Low pitch, lots of variance
+- Low timbre, lots of variance
+- Medium energy, lots of variance
+
+Redemption Song
+- High loudness, lots of variance
+- Medium pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, little variance
+
+Roses
+- High loudness, lots of variance
+- Very varied pitch
+- Very varied timbre
+- High energy, lots of variance
+
+Smells Like Teen Spirit
+- High loudness, little variance
+- Very varied pitch
+- Medium timbre, lots of variance
+- High energy, little variance
+
+Sonata No.14 Moonlight in C-Sharp Minor Op.27 No.2
+- Very varied loudness
+- Medium pitch, lots of variance
+- Low timbre, lots of variance
+- Medium energy, little variance
+
+Sorry
+- High loudness, lots of variance
+- Very varied pitch
+- Medium timbre, lots of variance
+- Medium energy, lots of variance
+
+Stairway to Heaven
+- High loudness, lots of variance
+- Low pitch, lots of variance
+- Very varied timbre
+- Medium energy, lots of variance
+
+Till I Collapse
+- High loudness, lots of variance
+- Low pitch, lots of variance
+- Medium timbre, lots of variance
+- Medium energy, lots variance
+
+Wonderwall
+- High loudness, little variance
+- Very varied pitch
+- Low timbre, lots of variance
+- High energy, lots of variance
+
+Your Song
+- High loudness, lots of variance
+- Low pitch, lots of variance
+- Low timbre, lots of variance
+- Medium energy, lots of variance

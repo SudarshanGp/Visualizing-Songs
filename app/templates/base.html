@@ -1,0 +1,184 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+    <style>
+    body {
+        /*Contains default information that applies through the body of the page*/
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 300;
+        font-size: 2em;
+        color: black;
+        position: relative;
+        padding-top: 40px;
+        background-color: "#000037";
+    }       
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/normalize.css/normalize.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/img/icon.png">
+    <script type="text/javascript" src="static/prefixfree/prefixfree.min.js"></script>
+    <!-- taking care of browser prefixes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="static/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://www.d3plus.org/js/d3.js"></script>
+    <script src="http://www.d3plus.org/js/d3plus.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <script src="static/d3/d3.min.js" charset="utf-8"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <nav id="navigator" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div id="top">
+            <div class="container header">
+                <div class="navbar header">
+                    <span id="heading"><span class="glyphicon glyphicon-chevron-left"></span>AudioViz<span
+                            class="glyphicon glyphicon-chevron-right"></span></span>
+                    <span><a data-toggle="modal" data-target="#myModal"> About</a></span>
+                </div>
+                <!-- navbar header -->
+            </div>
+            <!--container header -->
+        </div>
+        <!--top -->
+    </nav> <!-- navbar navbar-default navbar-fixed-top  -->
+</head>
+<body>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        console.log("CALLING FENERATE");
+      generate_first({{data_loudness}},{{data_pitches}},{{data_timbres}} , {{data_energy}});
+      generate_second({{data_loudness_1}},{{data_pitches_1}},{{data_timbres_1}} , {{data_energy_1}});
+    });
+    </script>
+    <div class="tab container-fluid">
+        <div class="row">
+            <div class="col-md-6 left">
+                <div class="row head">
+                    <h3 class="bold">First Song</h3>
+                </div>
+                <div class="row">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="choose">Choose Song</span><span
+                                class="caret"></span></button>
+                        <ul class="dropdown-menu scrollable-menu" role="menu">
+                            {% for item in songs %}
+                                <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row head">
+                    <h3 class="bold">Second Song</h3>
+                </div>
+                <div class="row">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="choose">Choose Song</span><span class="caret"></span></button>
+                        <ul class="dropdown-menu scrollable-menu" role="menu">
+                            {% for item in songs_second %}
+                                <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class = "container-fluid">
+
+        <div class = "row-fluid">
+            <div class = "col-md-6 left">
+            <div class = "song_info">
+                <h1>{{first_song_info}}</h1>
+            </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div id="viz"></div>
+                        <div class = "name">
+                            <span class = "name">Loudness</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6">
+                        <div id="viz2"></div>
+                        <div class = "name">
+                            <span>Pitch</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div id="viz3"></div>
+                        <div class = "name">
+                            <span class = "name">Timbre</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6">
+                        <div id="viz4"></div>
+                        <div class = "name">
+                            <span class = "name">Energy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-6">
+            <div class = "song_info">
+                <h1>{{second_song_info}}</h1>
+            </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div id="viz5"></div>
+                        <div class = "name">
+                            <span>Loudness</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6">
+                        <div id="viz6"></div>
+                        <div class = "name">
+                            <span>Pitch</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6">
+                        <div id="viz7"></div>
+                        <div class = "name">
+                            <span class = "name">Timbre</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6">
+                        <div id="viz8"></div>  
+                        <div class = "name">
+                            <span class = "name">Energy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About</h4>
+      </div>
+      <div class="modal-body">
+        <p><br>In this visualization, we want to explore songs from other metrics. We chose 4 features(Loudness, Timbre, Pitch, and Energy) to find characteristic of the songs, as well as, the artists'. We used the Echo Nest API to retrieve information about different songs.<br><br> We overlayed circles with radius corresponding the scaled magnitude of each feature. We sampled the song at 20ms to animate the trends of different as the song progressed. <br><br> The saturation of the color at a point represents more occurences of a certain magnitude of a feature overtime.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    <script src="static/js/script.js" charset="utf-8"></script>
+
+
+</body>
