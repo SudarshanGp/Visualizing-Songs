@@ -87,7 +87,7 @@ if __name__ == '__main__':
 	songs_second = sorted(songs_second)
     print(all_songs.keys())
     # print(all_songs.keys())
-    app.run(debug = True)
+    app.run(host = '0.0.0.0', port= 5002)
 
 
 
